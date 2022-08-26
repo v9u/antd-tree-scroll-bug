@@ -1,11 +1,20 @@
-# Vue 3 + Typescript + Vite
+# antd vue 目录树组件撑开顶层父容器的bug 最小化 demo (ant-design-vue version: 3.2.11)
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+# bug 说明：
+>将多个目录树组件（a-directory-tree）放到一个 div 容器下面并展开，会发现顶层父容器被撑开了，而且会有一个滚动条 
 
-## Recommended IDE Setup
+# 
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+# antd vue tree 组件文档：
+> https://www.antdv.com/components/tree-cn
 
-## Type Support For `.vue` Imports in TS
+# 安装依赖命令：
+> pnpm i
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+# 运行命令（成功后访问 3000 端口即可 http://localhost:3000/ ）：
+> pnpm dev
+
+# 注意： 构建命令 `pnpm build` 存在问题，请用运行命令 `pnpm dev` 进行测试；
+
+>本项目基于该项目创建：
+>https://github.com/snowdreamtech/vite-vue3-tsx-starter.git
