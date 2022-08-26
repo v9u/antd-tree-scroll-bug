@@ -13,6 +13,8 @@
 >![bug截图](public/bug.png)
 5. 展开所有列表（使用url  http://localhost:3000/?expand=1），可以发现页面高度被撑开了，而且出现了滚动条
 
+# 通过不断搜索，找到了的类似问题（但是解决方法确是更新版本）：
+> Ant Design Drawer组件出现多滚动条:https://blog.csdn.net/qq_40593656/article/details/115507802
 
 
 # 
