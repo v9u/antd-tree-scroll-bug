@@ -3,6 +3,18 @@
 # bug 说明：
 >将多个目录树组件（a-directory-tree）放到一个 div 容器下面并展开，会发现顶层父容器被撑开了，而且会有一个滚动条 
 
+# bug 复现步骤：
+0. 克隆项目到本地
+1. 使用 pnpm i 命令安装依赖
+2. 使用 pnpm dev 命令运行项目
+3. 打开页面  http://localhost:3000 ，然后将页面大小调整为露出点白色背景即可
+>![正常状态截图](public/correct.png)
+4. 折叠所有列表（使用url http://localhost:3000/?expand=0），可以发现页面右侧没有出现滚动条
+>![bug截图](public/bug.png)
+5. 展开所有列表（使用url  http://localhost:3000/?expand=1），可以发现页面高度被撑开了，而且出现了滚动条
+
+
+
 # 
 
 # antd vue tree 组件文档：
