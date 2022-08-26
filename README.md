@@ -1,7 +1,7 @@
 # antd vue 目录树组件撑开顶层父容器的bug 最小化 demo (ant-design-vue version: 3.2.11)
 
 # bug 说明：
->将多个目录树组件（a-directory-tree）放到一个 div 容器下面并展开，会发现顶层父容器被撑开了，而且会有一个滚动条 
+>将多个目录树组件（a-directory-tree）放到一个 div 容器下面并展开，会发现顶层父容器被撑开了，而且顶层父容器会有一个滚动条 
 
 # bug 复现步骤：
 0. 克隆项目到本地
