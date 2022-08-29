@@ -1,3 +1,5 @@
+# 目前找到了一个解决方案，就是把多目录树组件（a-directory-tree）用  a-list-item 包起来， 放到一个 列表里组件（a-list）里面，具体见 https://github.com/v9u/antd-tree-scroll-bug/tree/fix
+
 # antd vue 目录树组件撑开顶层父容器的bug 最小化 demo (ant-design-vue version: 3.2.11)
 
 # bug 说明：
