@@ -48,6 +48,7 @@ export default defineComponent({
 
     return () => (
       <a-directory-tree      
+      style={{wideth:'100%'}}
       v-model:expandedKeys={expandedKeys.value}
       v-model:selectedKeys={selectedKeys.value}
       multiple

@@ -58,6 +58,11 @@
 .tree{
   overflow: hidden;      
   overflow-y: auto;   
+  width:100%;
+}
+.list_item{
+  width:100%;
+  justify-content: space-around;
 }
 
 .info{
