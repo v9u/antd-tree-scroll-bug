@@ -25,7 +25,7 @@ export default defineComponent({
       console.log('obj:',obj)
     }
     const expand=ref(obj.expand)
-    
+    const array=[      '服务器1','服务器2','服务器3','收藏夹','回收站'    ]
     return () => (
       <div class='root'>
         <div class='header'>
@@ -37,13 +37,13 @@ export default defineComponent({
               <div>
                 <input type='text' placeholder='search...'/>
               </div>
-              <div class='tree'>
-                    <TreeList name='服务器1' expand={expand.value}/>
-                    <TreeList name='服务器2' expand={expand.value}/>
-                    <TreeList name='服务器3' expand={expand.value}/>
-                    <TreeList name='收藏夹' expand={expand.value}/>
-                    <TreeList name='回收站' expand={expand.value}/>
-              </div>
+              <a-list class='tree'>
+                {array.map(name=>
+                  <a-list-item class='list_item'>
+                  <TreeList name={name} expand={expand.value}/>
+                  </a-list-item>
+                  )}                   
+              </a-list>
             </div>
             <div class='info'>
               <p>info panel</p>
