@@ -37,13 +37,11 @@ export default defineComponent({
               <div>
                 <input type='text' placeholder='search...'/>
               </div>
-              <a-list class='tree'>
+              <div class='tree'>
                 {array.map(name=>
-                  <a-list-item class='list_item'>
                   <TreeList name={name} expand={expand.value}/>
-                  </a-list-item>
                   )}                   
-              </a-list>
+              </div>
             </div>
             <div class='info'>
               <p>info panel</p>
